@@ -12,7 +12,9 @@ elif client_budget >= 5_000:
 else:
     budget_gap = minimum_project_price - client_budget
     
-    print(f"Thanks, {client_name}.")
-    print("This client's budget is below the minimum project price.")
-    print(f"They need {budget_gap} more to meet the minimum budget.")
+    print(
+        f"\nThanks, {client_name}.\n"
+        "This client's budget is below the minimum project price.\n"
+        f"They need {budget_gap} more to meet the minimum budget.\n"
+        )
 

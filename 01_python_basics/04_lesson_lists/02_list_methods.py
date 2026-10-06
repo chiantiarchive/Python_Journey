@@ -1,15 +1,9 @@
 
 
-clients = [
-    "Chianti",
-    "Serene",
-    "Primus"
-]
+clients = ["Chianti","Serene","Primus"]
 
 for client in clients:
-    print(
-        f"Sending reminder to: {client}"
-    )
+    print(f"Sending reminder to: {client}")
 
 
 #
@@ -17,17 +11,11 @@ for client in clients:
 #
 
 
-clients = [
-    "Chianti",
-    "Serene",
-    "Primus"
-]
+clients = ["Chianti","Serene","Primus"]
 
 
 for i in range(len(clients)):
-    print(
-        f"Client {i}: {clients[i]}"
-    )
+    print(f"Client {i}: {clients[i]}")
 
 
 #
@@ -46,11 +34,5 @@ for client in clients:
     price = client[1]
     paid = client[2]
 
-    print(
-        f"{name} - {price} - Paid: {paid}"
-    )
-
-
-
-
+    print(f"{name} - {price} - Paid: {paid}")
 

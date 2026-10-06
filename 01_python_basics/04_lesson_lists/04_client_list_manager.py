@@ -2,42 +2,27 @@
 
 def display_clients(clients):
     if not clients:
-        print(
-            "No clients in the list"
-        )
+        print("No clients in the list")
         return
 
-    print(
-        "Client list: "
-    )
+    print("Client list: ")
 
     for i, client in enumerate(clients, start=1):
-        print(
-            f"{i}. {client}"
-        )
-
+        print(f"{i}. {client}")
 
 def add_client(clients, new_client):
     clients.append(new_client)
-    print(
-        f"Added client: {new_client}"
-    )
+    print(f"Added client: {new_client}")
 
 
 def remove_client(clients, client_name):
     if client_name in clients:
         clients.remove(client_name)
-        print(
-            f"Client '{client_name}' not found!"
-        )
+        print(f"Client '{client_name}' not found!")
 
 
 def main():
-    clients = [
-        "Chianti",
-        "Serene",
-        "Primus"
-    ]
+    clients = ["Chianti","Serene","Primus"]
 
     while True:
         print(
