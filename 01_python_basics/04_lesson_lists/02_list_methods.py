@@ -1,21 +1,13 @@
 
 
-clients = ["Chianti","Serene","Primus"]
+clients = ["Chianti", "Serene", "Primus"]
 
-for client in clients:
-    print(f"Sending reminder to: {client}")
+#   Change an item
+clients[1] = "Nz"
 
-
-#
-#
-#
-
-
-clients = ["Chianti","Serene","Primus"]
-
-
-for i in range(len(clients)):
-    print(f"Client {i}: {clients[i]}")
+#   Add an item to the end
+clients.append("Bruno")
+print(clients)
 
 
 #
@@ -23,16 +15,44 @@ for i in range(len(clients)):
 #
 
 
-clients = [
-    ["Chianti", 3_500, True],
-    ["Serene", 5_000, False],
-    ["Primus", 4_200, True],
-]
+clients = ["Chianti", "Serene", "Primus"]
 
-for client in clients:
-    name = client[0]
-    price = client[1]
-    paid = client[2]
+clients.insert(1, "Bruno")  # Inset at index 1
+print(clients)
 
-    print(f"{name} - {price} - Paid: {paid}")
+
+
+
+#
+#
+#
+
+
+clients = ["Chianti", "Serene", "Primus"]
+
+#   Remove by value
+clients.remove("Serene")
+
+#   Remove by index
+removed_client = clients.pop(1)
+
+#   Remove the last item
+last_client = clients.pop()
+
+print(
+    "\n",clients, "\n"
+    "Removed:", removed_client,"\n"
+    "Last removed:", last_client,"\n"
+    )
+
+
+#
+#
+#
+
+
+clients = ["Chianti", "Serene", "Primus"]
+
+count = len(clients)
+print(f"Total clients: {count}")
 
