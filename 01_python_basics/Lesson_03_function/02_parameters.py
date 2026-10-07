@@ -2,8 +2,8 @@
 
 def greet(name):
     print(
-        f"Hello, {name}"
-        "Welcome to your Python learning Journey.\n"
+        f"\nHello, {name}\n"
+        "Welcome to your Python learning Journey."
     )
     
 greet("chianti")
@@ -15,7 +15,7 @@ greet("Primus")
 #
 
 def introduce_developer(name, specialty):
-    print(f"{name}, is learning {specialty}.\n")
+    print(f"\n{name}, is learning {specialty}.")
 
 introduce_developer("Chianti", "Python automation")
 introduce_developer("Serene", "Hacking")
