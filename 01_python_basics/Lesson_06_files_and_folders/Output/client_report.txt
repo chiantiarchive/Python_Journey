@@ -1,0 +1,9 @@
+client Report
+========================================
+Serene - Budget: 7,000.00 - Not paid
+Chianti - Budget: 5,500.00 - Paid
+Chivara - Budget: 10,000.00 - Not paid
+========================================
+Total clients: 3
+Total Budget: 22,500.00
+Clients paid: 1
