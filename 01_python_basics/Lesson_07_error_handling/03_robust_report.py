@@ -1,5 +1,6 @@
 
 
+
 from pathlib import Path
 
 def generate_client_report(clients, output_path):
