@@ -189,6 +189,8 @@ cython_debug/
 
 # My modifications
 
+Github/
+
 # Python cache
 __pycache__/
 *.py[cod]
