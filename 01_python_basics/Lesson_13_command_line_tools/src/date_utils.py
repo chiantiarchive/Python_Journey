@@ -13,7 +13,7 @@ def calculate_days_left(due_date, today):
 
 def get_status(days_left):
     if days_left < 0:
-        return "Over due"
+        return "Overdue"
     elif days_left == 0:
         return "Due today"
     else:

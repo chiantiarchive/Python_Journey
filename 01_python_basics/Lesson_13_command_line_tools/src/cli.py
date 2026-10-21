@@ -28,8 +28,14 @@ def build_parser():
 
     parser.add_argument(
         "--input",
-        default="data/task.csv",
+        default="data/tasks.csv",
         help="Path to the input CSV file."
+    )
+
+    parser.add_argument(
+        "--output",
+        default="output",
+        help="Folder where the report will be saved.",
     )
 
     parser.add_argument(
@@ -62,7 +68,7 @@ def run_report(args):
 
         print(
             f"{task["task"]} - "
-            f"Due: {format_human_date(due_date)}"
+            f"Due: {format_human_date(due_date)} - "
             f"{status}"
         )  
 
@@ -72,18 +78,18 @@ def run_report(args):
         reminder_date = calculate_reminder_date(task["due_date"])
 
         print(
-            f"[task{"task"}] - "
-            f"Reminder on: {format_human_date}"
+            f"{task["task"]} - "
+            f"Reminder on: {reminder_date}"
         )
 
-    report_path = save_task_report(task, output_dir, today)
+    report_path = save_task_report(tasks, output_dir, today)
 
     print(f"\nSaved report: {report_path}")
 
 
 def main():
     parser = build_parser()
-    args = parser.parse_args
+    args = parser.parse_args()
 
     if args.command == "report":
         run_report(args)

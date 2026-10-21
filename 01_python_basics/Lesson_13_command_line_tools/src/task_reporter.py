@@ -33,7 +33,7 @@ def save_task_report(task, output_dir, today):
     lines = build_task_lines(task, today)
     lines.append("=" * 40)
 
-    output_dir.mkdir(parents=True, exists_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / "task_report.txt"
 
     output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
